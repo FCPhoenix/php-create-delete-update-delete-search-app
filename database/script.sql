@@ -1,0 +1,16 @@
+CREATE DATABASE phpApp;
+
+use phpApp;
+
+CREATE TABLE student(
+  id INT(11) PRIMARY KEY AUTO_INCREMENT,
+  age	INT(10) DEFAULT NULL,
+  specialty VARCHAR(255) DEFAULT NULL,
+  name VARCHAR(25) NOT NULL,
+  surname VARCHAR(25) NOT NULL,
+  gender VARCHAR(6) DEFAULT NULL,
+  matriculation_number VARCHAR(25) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+DESCRIBE student;
